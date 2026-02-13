@@ -10,4 +10,16 @@ function one() {
     two();
 }
 
-one();
+// one();
+
+
+// Immediately invoked function 
+( () => {
+    console.log("DB Connected");
+} )() ;
+
+//2 
+
+(function two(name) {
+    console.log(`DB Connected to ${name}`);
+}) ("firstDB");
